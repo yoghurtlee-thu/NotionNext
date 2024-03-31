@@ -22,7 +22,7 @@ const BLOG = {
 
     AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Chlorine', // 您的昵称 例如 tangly1024
     BIO: process.env.NEXT_PUBLIC_BIO || '我行四方，以日以年', // 作者简介
-    LINK: process.env.NEXT_PUBLIC_LINK || 'https://tangly1024.com', // 网站地址
+    LINK: process.env.NEXT_PUBLIC_LINK || 'https://yoghurtlee.com', // 网站地址
     KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, 博客', // 网站关键词 英文逗号隔开
 
     // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
@@ -33,7 +33,7 @@ const BLOG = {
     CONTACT_TELEGRAM: process.env.NEXT_PUBLIC_CONTACT_TELEGRAM || '', // 你的telegram 地址 例如 https://t.me/tangly_1024
     CONTACT_LINKEDIN: process.env.NEXT_PUBLIC_CONTACT_LINKEDIN || '', // 你的linkedIn 首页
     CONTACT_INSTAGRAM: process.env.NEXT_PUBLIC_CONTACT_INSTAGRAM || '', // 您的instagram地址
-    CONTACT_BILIBILI: process.env.NEXT_PUBLIC_CONTACT_BILIBILI || '', // B站主页
+    CONTACT_BILIBILI: process.env.NEXT_PUBLIC_CONTACT_BILIBILI || 'https://space.bilibili.com/1354054183', // B站主页
     CONTACT_YOUTUBE: process.env.NEXT_PUBLIC_CONTACT_YOUTUBE || '', // Youtube主页
 
     NOTION_HOST: process.env.NEXT_PUBLIC_NOTION_HOST || 'https://www.notion.so', // Notion域名，您可以选择用自己的域名进行反向代理，如果不懂得什么是反向代理，请勿修改此项
@@ -183,7 +183,7 @@ const BLOG = {
     BACKGROUND_DARK: '#000000', // use hex value, don't forget '#'
     SUB_PATH: '', // leave this empty unless you want to deploy in a folder
 
-    POST_SHARE_BAR_ENABLE: process.env.NEXT_PUBLIC_POST_SHARE_BAR || 'true', // 文章分享功能 ，将在底部显示一个分享条
+    POST_SHARE_BAR_ENABLE: process.env.NEXT_PUBLIC_POST_SHARE_BAR || 'false', // 文章分享功能 ，将在底部显示一个分享条
     POSTS_SHARE_SERVICES:
         process.env.NEXT_PUBLIC_POST_SHARE_SERVICES ||
         'link,wechat,qq,weibo,email,facebook,twitter,telegram,messenger,line,reddit,whatsapp,linkedin', // 分享的服務，按顺序显示,逗号隔开
@@ -217,7 +217,7 @@ const BLOG = {
 
     //   ********动态特效相关********
     // 鼠标点击烟花特效
-    FIREWORKS: process.env.NEXT_PUBLIC_FIREWORKS || false, // 开关
+    FIREWORKS: process.env.NEXT_PUBLIC_FIREWORKS || true, // 开关
     // 烟花色彩，感谢 https://github.com/Vixcity 提交的色彩
     FIREWORKS_COLOR: ['255, 20, 97', '24, 255, 146', '90, 135, 255', '251, 243, 140'],
 
@@ -230,7 +230,7 @@ const BLOG = {
     // 静态彩带特效
     RIBBON: process.env.NEXT_PUBLIC_RIBBON || false, // 开关
     // 星空雨特效 黑夜模式才会生效
-    STARRY_SKY: process.env.NEXT_PUBLIC_STARRY_SKY || false, // 开关
+    STARRY_SKY: process.env.NEXT_PUBLIC_STARRY_SKY || true, // 开关
 
     //   ********挂件组件相关********
     // AI 文章摘要生成 @see https://docs_s.tianli0.top/
@@ -302,7 +302,7 @@ const BLOG = {
     COMMENT_TWIKOO_ENV_ID: process.env.NEXT_PUBLIC_COMMENT_ENV_ID || '', // TWIKOO后端地址 腾讯云环境填envId；Vercel环境填域名，教程：https://tangly1024.com/article/notionnext-twikoo
     COMMENT_TWIKOO_COUNT_ENABLE: process.env.NEXT_PUBLIC_COMMENT_TWIKOO_COUNT_ENABLE || false, // 博客列表是否显示评论数
     COMMENT_TWIKOO_CDN_URL:
-        process.env.NEXT_PUBLIC_COMMENT_TWIKOO_CDN_URL || 'https://cdn.staticfile.org/twikoo/1.6.17/twikoo.min.js', // twikoo客户端cdn
+        process.env.NEXT_PUBLIC_COMMENT_TWIKOO_CDN_URL || 'https://cdn.staticfile.org/twikoo/1.6.31/twikoo.min.js', // twikoo客户端cdn
 
     // utterance
     COMMENT_UTTERRANCES_REPO: process.env.NEXT_PUBLIC_COMMENT_UTTERRANCES_REPO || '', // 你的代码仓库名， 例如我是 'tangly1024/NotionNext'； 更多文档参考 https://utteranc.es/

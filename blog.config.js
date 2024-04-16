@@ -229,7 +229,7 @@ const BLOG = {
     PREVIEW_TAG_COUNT: 16, // 首页最多展示的标签数量，0为不限制
 
   POST_DISABLE_GALLERY_CLICK:
-    process.env.NEXT_PUBLIC_POST_DISABLE_GALLERY_CLICK || false, // 画册视图禁止点击，方便在友链页面的画册插入链接
+    process.env.NEXT_PUBLIC_POST_DISABLE_GALLERY_CLICK || true, // 画册视图禁止点击，方便在友链页面的画册插入链接
 
     //   ********动态特效相关********
     // 鼠标点击烟花特效
@@ -269,7 +269,7 @@ const BLOG = {
   DIFY_CHATBOT_BASE_URL: process.env.NEXT_PUBLIC_DIFY_CHATBOT_BASE_URL || '',
   DIFY_CHATBOT_TOKEN: process.env.NEXT_PUBLIC_DIFY_CHATBOT_TOKEN || '',
   // 悬浮挂件
-  WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || true, // 是否显示宠物挂件
+  WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || false, // 是否显示宠物挂件
   WIDGET_PET_LINK:
     process.env.NEXT_PUBLIC_WIDGET_PET_LINK ||
     'https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json', // 挂件模型地址 @see https://github.com/xiazeyu/live2d-widget-models

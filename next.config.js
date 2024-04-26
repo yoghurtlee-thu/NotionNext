@@ -6,7 +6,7 @@ const { extractLangPrefix } = require('./lib/utils/pageId')
 
 // 打包时是否分析代码
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: BLOG.BUNDLE_ANALYZER
+    enabled: BLOG.BUNDLE_ANALYZER
 })
 
 // 扫描项目 /themes下的目录名
@@ -38,19 +38,19 @@ const locales = (function () {
  * @returns
  */
 function scanSubdirectories(directory) {
-  const subdirectories = []
+    const subdirectories = []
 
-  fs.readdirSync(directory).forEach(file => {
-    const fullPath = path.join(directory, file)
-    const stats = fs.statSync(fullPath)
-    if (stats.isDirectory()) {
-      subdirectories.push(file)
-    }
+    fs.readdirSync(directory).forEach(file => {
+        const fullPath = path.join(directory, file)
+        const stats = fs.statSync(fullPath)
+        if (stats.isDirectory()) {
+            subdirectories.push(file)
+        }
 
-    // subdirectories.push(file)
-  })
+        // subdirectories.push(file)
+    })
 
-  return subdirectories
+    return subdirectories
 }
 
 const nextConfig = {
@@ -59,14 +59,16 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
     // 允许next/image加载的图片 域名
     domains: [
-      'gravatar.com',
-      'www.notion.so',
-      'avatars.githubusercontent.com',
-      'images.unsplash.com',
-      'source.unsplash.com',
-      'p1.qhimg.com',
-      'webmention.io',
-      'ko-fi.com'
+		'gravatar.com',
+		'www.notion.so',
+        'avatars.githubusercontent.com',
+		'images.unsplash.com',
+		'source.unsplash.com',
+		'p1.qhimg.com',
+		'webmention.io',
+		'ko-fi.com',
+		'qsol.yoghurtlee.com',
+		'chlorinedemo.s3.bitiful.net'
     ]
   },
   // 默认将feed重定向至 /public/rss/feed.xml

@@ -71,6 +71,7 @@ const nextConfig = {
 		'chlorinedemo.s3.bitiful.net'
     ]
   },
+
   // 默认将feed重定向至 /public/rss/feed.xml
   async redirects() {
     return [

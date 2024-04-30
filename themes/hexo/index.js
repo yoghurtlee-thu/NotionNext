@@ -19,9 +19,10 @@ import BlogPostListPage from './components/BlogPostListPage'
 import BlogPostListScroll from './components/BlogPostListScroll'
 import Card from './components/Card'
 import Footer from './components/Footer'
+import Header from './components/Header'
 import Hero from './components/Hero'
 import JumpToCommentButton from './components/JumpToCommentButton'
-import PostHeader from './components/PostHeader'
+import PostHero from './components/PostHero'
 import RightFloatArea from './components/RightFloatArea'
 import SearchNav from './components/SearchNav'
 import SideRight from './components/SideRight'
@@ -29,7 +30,6 @@ import SlotBar from './components/SlotBar'
 import TagItemMini from './components/TagItemMini'
 import TocDrawer from './components/TocDrawer'
 import TocDrawerButton from './components/TocDrawerButton'
-import TopNav from './components/TopNav'
 import CONFIG from './config'
 import BlogMemos from './components/BlogMemos'
 import { Style } from './style'
@@ -55,7 +55,7 @@ const LayoutBase = props => {
 
   const router = useRouter()
   const headerSlot = post ? (
-    <PostHeader {...props} />
+    <PostHero {...props} />
   ) : router.route === '/' &&
     siteConfig('HEXO_HOME_BANNER_ENABLE', null, CONFIG) ? (
     <Hero {...props} />
@@ -90,7 +90,7 @@ const LayoutBase = props => {
         <Style />
 
         {/* 顶部导航 */}
-        <TopNav {...props} />
+        <Header {...props} />
 
         {/* 顶部嵌入 */}
         <Transition

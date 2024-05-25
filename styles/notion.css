@@ -68,7 +68,7 @@
 }
 
 .notion {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   color: var(--fg-color);
   caret-color: var(--fg-color);
@@ -163,11 +163,11 @@
 }
 
 .notion-aside-table-of-contents .notion-table-of-contents-item-indent-level-1 {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .notion-aside-table-of-contents .notion-table-of-contents-item-indent-level-2 {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .notion-aside-table-of-contents .notion-table-of-contents-item-body {
@@ -545,7 +545,7 @@ summary > .notion-h {
   border-left: 3px solid currentcolor;
   padding: 0.2em 0.9em;
   margin: 6px 0;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .notion-hr {
@@ -637,7 +637,7 @@ svg.notion-page-icon {
   padding: 0.2em 0.4em;
   background: var(--bg-color-2);
   border-radius: 3px;
-  font-size: 85%;
+  font-size: 90%;
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
     monospace;
 }
@@ -745,7 +745,7 @@ svg.notion-page-icon {
 }
 
 .notion .notion-code {
-  font-size: 85%;
+  font-size: 90%;
   margin-top: 0;
   margin-bottom: 0.5em;
 }

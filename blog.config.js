@@ -64,14 +64,16 @@ const BLOG = {
     FONT_STYLE: process.env.NEXT_PUBLIC_FONT_STYLE || "font-sans font-light",
     // 字体CSS 例如 https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css
     FONT_URL: [
-        "https://npm.elemecdn.com/lxgw-wenkai-webfont@1.7.0/style.css",
+        "https://cdn.chlorinechan.top/LXGWWenKaiLite/result.css",
+        "https://cdn.chlorinechan.top/FiraCode-VF/result.css",
         "https://fonts.googleapis.com/css?family=Bitter&display=swap",
         "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap",
         "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&display=swap",
     ],
     // 无衬线字体 例如'"LXGW WenKai"'
     FONT_SANS: [
-        '"LXGW WenKai"',
+        "Fira Code Light", 
+        '"LXGW WenKai Lite"',
         '"PingFang SC"',
         "-apple-system",
         "BlinkMacSystemFont",
@@ -91,7 +93,8 @@ const BLOG = {
     ],
     // 衬线字体 例如'"LXGW WenKai"'
     FONT_SERIF: [
-        '"LXGW WenKai"',
+        "Fira Code Light", 
+        '"LXGW WenKai Lite"',
         "Bitter",
         '"Noto Serif SC"',
         "SimSun",

@@ -16,7 +16,11 @@ const Footer = ({ title }) => {
 
       {siteConfig('BEI_AN') && <><i className='fas fa-shield-alt' /> <a href='https://beian.miit.gov.cn' className='mr-2'>{siteConfig('BEI_AN')}</a></>}
       <p>
-    <img class="beian-icon" src="https://s2.loli.net/2024/07/12/xVpF7HBUiRTOYr2.png" style="vertical-align: middle; margin-right: 5px;" alt="备案图标" />
+   <img 
+  class="beian-icon" 
+  src="https://s2.loli.net/2024/07/12/xVpF7HBUiRTOYr2.png" 
+  style={{verticalAlign: 'middle', marginRight: '5px'}} 
+  alt="备案图标"/>
     <a href="https://beian.mps.gov.cn/#/query/webSearch?code=11010802044640" style="vertical-align: middle;" rel="noreferrer" target="_blank">京公网安备11010802044640</a>
      </p>
       <span className='hidden busuanzi_container_site_pv'>
